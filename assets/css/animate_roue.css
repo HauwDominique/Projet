@@ -1,0 +1,89 @@
+/* la ligne horizontale servant de base pour la roue */
+
+#lineHorizontale {
+    border: solid black 3px;
+    width: 100%;
+    position: absolute;
+    top: 300px;
+}
+
+/* La roue */
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#bigCircle {
+    width: 150px;
+    height: 150px;
+    border: solid 20px grey;
+    position: absolute;
+    top: 150px;
+    left :5px;
+}
+
+/* animation de la roue */
+@keyframes rotateRoue {
+    0% {margin-left: 10px; transform: rotate(0deg);}
+    100% {margin-left : 75%; transform: rotate(360deg);}
+}
+
+/* Le petit cercle au centre */
+
+#litteCircle {
+    width: 30px;
+    height: 30px;
+    /* border: solid 2px black; */
+    background-color: brown;
+    }
+
+/* la partie des rayons */
+#rayons {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ray {
+    border: solid grey 2px;
+    width: 130px;
+    position: absolute;
+}
+
+#ray1 {
+    transform: rotate(30deg);
+}
+
+#ray2 {
+    transform: rotate(90deg);
+}
+
+#ray3 {
+    transform: rotate(-30deg);
+}
+
+/* le bouton */
+
+button {
+    position: absolute;
+    top : 20px;
+    left : 20px;
+}
+
+/* la boite en arriere plan */
+
+.box {
+    width : 150px;
+    height: 80px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top : 225px;
+    margin-left : 80%;
+}
